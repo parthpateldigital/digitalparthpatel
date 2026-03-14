@@ -48,25 +48,25 @@ const Footer = () => {
                             <li>
                                 <Link to="/seo-services" className="text-slate-400 hover:text-primary transition-colors text-sm flex items-center gap-2 group">
                                     <ExternalLink size={12} className="opacity-0 group-hover:opacity-100 transition-opacity" />
-                                    SEO (Optimization)
+                                    SEO
                                 </Link>
                             </li>
                             <li>
                                 <Link to="/smo-services" className="text-slate-400 hover:text-primary transition-colors text-sm flex items-center gap-2 group">
                                     <ExternalLink size={12} className="opacity-0 group-hover:opacity-100 transition-opacity" />
-                                    SMO (Optimization)
+                                    SMO
                                 </Link>
                             </li>
                             <li>
                                 <Link to="/smm-services" className="text-slate-400 hover:text-primary transition-colors text-sm flex items-center gap-2 group">
                                     <ExternalLink size={12} className="opacity-0 group-hover:opacity-100 transition-opacity" />
-                                    SMM (Marketing)
+                                    SMM
                                 </Link>
                             </li>
                             <li>
                                 <Link to="/ppc-services" className="text-slate-400 hover:text-primary transition-colors text-sm flex items-center gap-2 group">
                                     <ExternalLink size={12} className="opacity-0 group-hover:opacity-100 transition-opacity" />
-                                    PPC (Advertising)
+                                    PPC
                                 </Link>
                             </li>
                         </ul>

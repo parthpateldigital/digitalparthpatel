@@ -103,8 +103,8 @@ const SeoServices = () => {
                             className="relative p-2 glass-card rounded-2xl border-white/10"
                         >
                             <img
-                                src="https://images.unsplash.com/photo-1571721795195-a2ca2d3370a9?auto=format&fit=crop&q=80&w=1200"
-                                alt="SEO Analysis"
+                                src="/images/on-page-seo.png"
+                                alt="On-Page SEO Optimization"
                                 className="rounded-xl w-full"
                                 loading="lazy"
                             />

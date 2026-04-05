@@ -291,7 +291,7 @@ export const BlogProvider = ({ children }) => {
 
                 const savedIds = new Set(parsed.map(p => p.id));
                 const missingInitial = initialPosts.filter(p => !savedIds.has(p.id));
-                return [...parsed, ...missingInitial];
+                return [...missingInitial, ...parsed];
             }
         } catch (err) {
             console.error('Failed to initialize blog posts:', err);

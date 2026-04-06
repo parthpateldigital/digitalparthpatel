@@ -32,7 +32,7 @@ const initialPosts = [
         id: 'seo-trends-2026',
         title: 'Future of SEO: Top Trends to Watch in 2026',
         excerpt: 'Dive deep into AI-driven search, GEO optimization, and the rise of immersive 3D experiences in the coming year.',
-        image: 'https://images.unsplash.com/photo-1571721795195-a2ca2d3370a9?auto=format&fit=crop&q=80&w=1200',
+        image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=1200',
         date: 'Mar 10, 2024',
         author: 'Parth Patel',
         category: 'SEO',

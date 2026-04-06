@@ -283,7 +283,7 @@ const initialPosts = [
 export const BlogProvider = ({ children }) => {
     const [posts, setPosts] = useState(() => {
         try {
-            const savedPosts = localStorage.getItem('digital_blog_posts_v3');
+            const savedPosts = localStorage.getItem('digital_blog_posts_v4');
             if (savedPosts) {
                 const parsed = JSON.parse(savedPosts);
 
@@ -301,7 +301,7 @@ export const BlogProvider = ({ children }) => {
 
     useEffect(() => {
         try {
-            localStorage.setItem('digital_blog_posts_v3', JSON.stringify(posts));
+            localStorage.setItem('digital_blog_posts_v4', JSON.stringify(posts));
         } catch (e) {
             console.error('LocalStorage save failed:', e);
             if (e.name === 'QuotaExceededError' || e.name === 'NS_ERROR_DOM_QUOTA_REACHED') {
@@ -311,7 +311,7 @@ export const BlogProvider = ({ children }) => {
                     image: p.image?.startsWith('data:image') ? null : p.image
                 }));
                 try {
-                    localStorage.setItem('digital_blog_posts_v3', JSON.stringify(safePosts));
+                    localStorage.setItem('digital_blog_posts_v4', JSON.stringify(safePosts));
                 } catch (innerError) {
                     console.error('Fallback save also failed:', innerError);
                 }

@@ -311,7 +311,7 @@ export const BlogProvider = ({ children }) => {
                     image: p.image?.startsWith('data:image') ? null : p.image
                 }));
                 try {
-                    localStorage.setItem('digital_blog_posts_v3', JSON.stringify(safePosts));
+                    localStorage.setItem('digital_blog_posts_v4', JSON.stringify(safePosts));
                 } catch (innerError) {
                     console.error('Fallback save also failed:', innerError);
                 }

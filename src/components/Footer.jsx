@@ -79,7 +79,7 @@ const Footer = () => {
                     <div className="space-y-6">
                         <h4 className="text-lg font-bold text-white uppercase tracking-wider">Company</h4>
                         <ul className="space-y-2">
-                            {['About', 'Blog', 'Contact'].map((item) => (
+                            {['About', 'Portfolio', 'Blog', 'Contact'].map((item) => (
                                 <li key={item}>
                                     <Link to={`/${item.toLowerCase()}`} className="text-slate-400 hover:text-primary transition-colors text-sm">
                                         {item === 'About' ? 'About Us' : item === 'Contact' ? 'Contact Us' : item}

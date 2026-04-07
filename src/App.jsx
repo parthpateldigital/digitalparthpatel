@@ -8,6 +8,7 @@ import SmoServices from './pages/SmoServices'
 import SmmServices from './pages/SmmServices'
 import PpcServices from './pages/PpcServices'
 import About from './pages/About'
+import Portfolio from './pages/Portfolio'
 import Contact from './pages/Contact'
 import Blog from './pages/Blog'
 import BlogPost from './pages/BlogPost'
@@ -70,7 +71,8 @@ function App() {
                       <Route path="/services/Social-Media-Optimization" element={<SmoServices />} />
                       <Route path="/services/Social-Media-Marketing" element={<SmmServices />} />
                       <Route path="/services/Pay-Per-Click-Advertising" element={<PpcServices />} />
-                      <Route path="/about" element={<About />} />
+                       <Route path="/about" element={<About />} />
+                      <Route path="/portfolio" element={<Portfolio />} />
                       <Route path="/contact" element={<Contact />} />
                       <Route path="/blog" element={<Blog />} />
                       <Route path="/blog/:id" element={<BlogPost />} />

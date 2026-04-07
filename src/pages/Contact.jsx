@@ -4,22 +4,38 @@ import { Mail, Phone, MapPin, Send, MessageCircle } from 'lucide-react'
 import FAQ from '../components/FAQ'
 
 const Contact = () => {
-    const handleSubmit = (e) => {
-        e.preventDefault()
-        const formData = new FormData(e.target)
-        const name = formData.get('name')
-        const email = formData.get('email')
-        const phone = formData.get('phone')
-        const service = formData.get('service')
-        const message = formData.get('message')
+    const [sending, setSending] = React.useState(false);
 
-        const whatsappMessage = `Hi, I'm ${name}. 
-Email: ${email}
-Phone: ${phone}
-Service: ${service}
-Message: ${message}`
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        setSending(true);
 
-        window.open(`https://wa.me/917600907141?text=${encodeURIComponent(whatsappMessage)}`, '_blank')
+        const formData = new FormData(e.target);
+        
+        // Ye 'parthpateldigital@gmail.com' par mail bhejne ke liye 
+        // aapko bas apni Web3Forms Access Key yahan daalni hai.
+        formData.append("access_key", "YOUR_ACCESS_KEY_HERE"); 
+        formData.append("from_name", "Digital Parth Patel Website");
+        formData.append("subject", "New Inquiry for Digital Parth Patel");
+
+        try {
+            const res = await fetch("https://api.web3forms.com/submit", {
+                method: "POST",
+                body: formData
+            });
+            const data = await res.json();
+
+            if (data.success) {
+                alert("Thank you! Your message has been sent directly to our email. We will contact you soon.");
+                e.target.reset();
+            } else {
+                alert("Submission failed. Please check if your Access Key is correct.");
+            }
+        } catch (error) {
+            alert("Connection error. Could not send the email.");
+        } finally {
+            setSending(false);
+        }
     }
 
     return (
@@ -40,7 +56,7 @@ Message: ${message}`
                             transition={{ delay: 0.1 }}
                             className="text-slate-400 text-lg md:text-xl leading-relaxed"
                         >
-                            Whether you're looking to dominate search results, viralize your social presence, or maximize your ROI through precision-targeted ads, we're here to help. Reach out today for a <strong>free audit</strong> and a personalized growth roadmap tailored to your business goals.
+                            Fill out the form below and we'll receive your query **directly via email**. Our team usually responds within 24 hours.
                         </motion.p>
                     </div>
 
@@ -183,10 +199,11 @@ Message: ${message}`
 
                                     <button
                                         type="submit"
-                                        className="btn-gradient w-full py-5 rounded-xl text-white font-bold text-lg flex items-center justify-center gap-3 shadow-xl shadow-primary/20"
+                                        disabled={sending}
+                                        className="btn-gradient w-full py-5 rounded-xl text-white font-bold text-lg flex items-center justify-center gap-3 shadow-xl shadow-primary/20 disabled:opacity-50 disabled:cursor-not-allowed"
                                     >
-                                        Send Message
-                                        <Send size={20} />
+                                        {sending ? 'Sending...' : 'Send Message'}
+                                        {!sending && <Send size={20} />}
                                     </button>
                                 </form>
                             </motion.div>

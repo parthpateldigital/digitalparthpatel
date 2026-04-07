@@ -53,7 +53,7 @@ const Navbar = () => {
                     <img
                         src="/images/logo.png"
                         alt="Digital Parth Patel Logo"
-                        className="h-20 md:h-24 w-auto object-contain"
+                        className="h-20 md:h-24 w-auto object-contain mix-blend-screen"
                     />
                 </Link>
 

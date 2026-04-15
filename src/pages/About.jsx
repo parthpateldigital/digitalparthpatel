@@ -43,8 +43,8 @@ const About = () => {
                             className="relative p-2 glass-card rounded-2xl border-white/10"
                         >
                             <img
-                                src="/images/parth-profile.jpg"
-                                alt="Founders Story"
+                                src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&q=80&w=1200"
+                                alt="Our Agency Workspace"
                                 className="rounded-xl w-full"
                                 loading="lazy"
                             />

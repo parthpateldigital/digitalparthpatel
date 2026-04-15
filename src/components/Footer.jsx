@@ -16,10 +16,10 @@ const Footer = () => {
                     {/* Brand Column */}
                     <div className="space-y-6 lg:pr-6">
                         <Link to="/" className="inline-block hover:opacity-80 transition-opacity">
-                            <img
-                                src="/images/logo.png"
-                                alt="Digital Parth Patel Logo"
-                                className="h-16 md:h-20 w-auto object-contain mix-blend-screen"
+                            <img 
+                                src="/images/logo.png" 
+                                alt="Digital Parth Patel" 
+                                className="h-10 md:h-12 w-auto object-contain"
                             />
                         </Link>
                         <p className="text-slate-400 text-sm leading-relaxed font-light">

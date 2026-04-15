@@ -114,9 +114,9 @@ const Portfolio = () => {
                                 <div className="absolute -inset-4 bg-gradient-to-tr from-primary to-blue-400 opacity-20 blur-2xl group-hover:opacity-40 transition-opacity" />
                                 <div className="w-64 h-64 md:w-80 md:h-80 rounded-[50px] overflow-hidden border-2 border-white/10 relative z-10">
                                     <img 
-                                        src="/images/parth-profile.jpg" 
-                                        alt="Parth Patel" 
-                                        className="w-full h-full object-cover transition-all duration-700 hover:scale-105"
+                                        src="/images/hero-growth.png" 
+                                        alt="Professional Expertise" 
+                                        className="w-full h-full object-cover transition-all duration-700"
                                     />
                                 </div>
                                 <div className="absolute -bottom-6 -right-6 w-24 h-24 bg-dark border border-white/10 rounded-3xl flex items-center justify-center z-20 shadow-2xl backdrop-blur-xl">
@@ -164,9 +164,6 @@ const Portfolio = () => {
                                 </div>
 
                                 <div className="flex flex-wrap gap-4 pt-8">
-                                    <a href="/contact" className="btn-gradient px-10 py-5 rounded-2xl font-black text-sm uppercase tracking-widest flex items-center gap-2">
-                                        Hire Me <ArrowRight size={18} />
-                                    </a>
                                     <a href="/images/parth-profile.jpg" download className="px-10 py-5 bg-white/5 border border-white/10 text-white rounded-2xl font-black text-sm uppercase tracking-widest hover:bg-white/10 transition-all flex items-center gap-2">
                                         <Download size={18} /> Resume
                                     </a>

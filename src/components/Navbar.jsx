@@ -50,10 +50,10 @@ const Navbar = () => {
         >
             <div className="container mx-auto px-4 md:px-6 flex justify-between items-center">
                 <Link to="/" className="flex items-center">
-                    <img
-                        src="/images/logo.png"
-                        alt="Digital Parth Patel Logo"
-                        className="h-20 md:h-24 w-auto object-contain mix-blend-screen"
+                    <img 
+                        src="/images/logo.png" 
+                        alt="Digital Parth Patel" 
+                        className="h-12 md:h-16 w-auto object-contain"
                     />
                 </Link>
 

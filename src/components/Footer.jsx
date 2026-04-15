@@ -16,11 +16,13 @@ const Footer = () => {
                     {/* Brand Column */}
                     <div className="space-y-6 lg:pr-6">
                         <Link to="/" className="inline-block hover:opacity-80 transition-opacity">
-                            <img 
-                                src="/images/logo.png" 
-                                alt="Digital Parth Patel" 
-                                className="h-10 md:h-12 w-auto object-contain"
-                            />
+                            <div className="bg-white/5 backdrop-blur-sm p-1.5 rounded-xl border border-white/10 inline-block">
+                                <img 
+                                    src="/images/logo.png" 
+                                    alt="Digital Parth Patel" 
+                                    className="h-8 md:h-10 w-auto object-contain brightness-125 contrast-125"
+                                />
+                            </div>
                         </Link>
                         <p className="text-slate-400 text-sm leading-relaxed font-light">
                             We help businesses transform their digital presence and achieve sustainable growth through ROI-driven marketing strategies.

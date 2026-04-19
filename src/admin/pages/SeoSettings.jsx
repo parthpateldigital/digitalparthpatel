@@ -17,9 +17,9 @@ import GlassCard from '../components/GlassCard';
 import { useToast } from '../context/ToastContext';
 
 const initialSeoData = {
-    home: { title: 'Digital Parth Patel | Leading Marketing Agency in Ahmedabad', description: 'Transform your business with Digital Parth Patel. Expert SEO, Google Ads, and Branding services designed to scale your ROI globally.', keywords: 'marketing agency, seo experts ahmedabad, google ads manager, digital parth patel', canonical: 'https://digitalparthpatel.com/' },
-    services: { title: 'Our Digital Services | SEO, Ads & Branding | Digital Parth Patel', description: 'Explore our full suite of digital marketing services. From local SEO to international search dominance, we help you win.', keywords: 'seo services, ppc management, web design agency', canonical: 'https://digitalparthpatel.com/services' },
-    blog: { title: 'Digital Marketing Insights & Tutorials | Digital Parth Patel Blog', description: 'Stay updated with the latest trends in digital marketing. Read expert guides on SEO, Google Ads, and content strategy.', keywords: 'marketing blog, seo tips, ads strategy', canonical: 'https://digitalparthpatel.com/blog' },
+    home: { title: 'Digital Parth Patel | Leading Marketing Agency in Ahmedabad', description: 'Transform your business with Digital Parth Patel. Expert SEO, Google Ads, and Branding services designed to scale your ROI globally.', keywords: 'marketing agency, seo experts ahmedabad, google ads manager, digital parth bhensadadiya', canonical: 'https://digitalparth.com/' },
+    services: { title: 'Our Digital Services | SEO, Ads & Branding | Digital Parth Patel', description: 'Explore our full suite of digital marketing services. From local SEO to international search dominance, we help you win.', keywords: 'seo services, ppc management, web design agency', canonical: 'https://digitalparth.com/services' },
+    blog: { title: 'Digital Marketing Insights & Tutorials | Digital Parth Patel Blog', description: 'Stay updated with the latest trends in digital marketing. Read expert guides on SEO, Google Ads, and content strategy.', keywords: 'marketing blog, seo tips, ads strategy', canonical: 'https://digitalparth.com/blog' },
 };
 
 export default function SeoSettings() {
@@ -165,7 +165,7 @@ export default function SeoSettings() {
                                     <div className="w-6 h-6 rounded-full bg-slate-100 flex items-center justify-center border border-slate-200">
                                         <Globe size={12} />
                                     </div>
-                                    <span className="font-medium">digitalparthpatel.com</span>
+                                    <span className="font-medium">digitalparth.com</span>
                                     <span className="text-slate-500 text-[10px] uppercase">› {activePage}</span>
                                 </div>
                                 <h3 className="text-[20px] text-[#1a0dab] font-medium leading-tight group-hover:underline cursor-pointer">{formData.title}</h3>

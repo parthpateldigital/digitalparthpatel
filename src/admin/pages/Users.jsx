@@ -31,9 +31,9 @@ import GlassCard from '../components/GlassCard';
 import { useToast } from '../context/ToastContext';
 
 const initialUsers = [
-    { id: 1, name: 'Parth Patel', email: 'parth@digitalparthpatel.com', role: 'Super Admin', status: 'Active', lastLogin: '2 Hours ago', loginIp: '192.168.1.1' },
-    { id: 2, name: 'Megha Sharma', email: 'megha@digitalparthpatel.com', role: 'Editor', status: 'Active', lastLogin: 'Yesterday', loginIp: '192.168.1.45' },
-    { id: 3, name: 'Rahul Varma', role: 'Ad Manager', email: 'rahul@digitalparthpatel.com', status: 'Inactive', lastLogin: '5 Days ago', loginIp: '102.45.1.2' },
+    { id: 1, name: 'Parth Patel', email: 'parth@digitalparth.com', role: 'Super Admin', status: 'Active', lastLogin: '2 Hours ago', loginIp: '192.168.1.1' },
+    { id: 2, name: 'Megha Sharma', email: 'megha@digitalparth.com', role: 'Editor', status: 'Active', lastLogin: 'Yesterday', loginIp: '192.168.1.45' },
+    { id: 3, name: 'Rahul Varma', role: 'Ad Manager', email: 'rahul@digitalparth.com', status: 'Inactive', lastLogin: '5 Days ago', loginIp: '102.45.1.2' },
 ];
 
 export default function Users() {
@@ -212,7 +212,7 @@ export default function Users() {
                                     <label className="block text-slate-500 text-[10px] font-black uppercase tracking-widest pl-2 italic italic-none">Authorized Communication Node (Email)</label>
                                     <div className="relative group">
                                         <Mail size={18} className="absolute left-6 top-1/2 -translate-y-1/2 text-slate-700 group-focus-within:text-blue-500 transition-colors pointer-events-none" />
-                                        <input required name="email" type="email" className="w-full bg-white/5 border border-white/10 rounded-2xl py-5 pl-16 pr-6 text-white font-bold focus:outline-none focus:border-blue-500 transition-all focus:bg-white/10 placeholder:text-slate-800" placeholder="user@digitalparthpatel.com" />
+                                        <input required name="email" type="email" className="w-full bg-white/5 border border-white/10 rounded-2xl py-5 pl-16 pr-6 text-white font-bold focus:outline-none focus:border-blue-500 transition-all focus:bg-white/10 placeholder:text-slate-800" placeholder="user@digitalparth.com" />
                                     </div>
                                 </div>
                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">

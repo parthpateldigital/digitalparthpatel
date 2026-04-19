@@ -16,22 +16,20 @@ const Footer = () => {
                     {/* Brand Column */}
                     <div className="space-y-6 lg:pr-6">
                         <Link to="/" className="inline-block hover:opacity-80 transition-opacity">
-                            <div className="bg-white/5 backdrop-blur-sm p-1.5 rounded-xl border border-white/10 inline-block">
                                 <img 
-                                    src="/images/logo.png" 
+                                    src="/images/logo-new.png" 
                                     alt="Digital Parth Patel" 
-                                    className="h-8 md:h-10 w-auto object-contain brightness-125 contrast-125"
+                                    className="h-8 md:h-10 w-auto object-contain brightness-110 contrast-125"
                                 />
-                            </div>
                         </Link>
                         <p className="text-slate-400 text-sm leading-relaxed font-light">
                             We help businesses transform their digital presence and achieve sustainable growth through ROI-driven marketing strategies.
                         </p>
                         <div className="flex gap-3">
                             {[
-                                { icon: Facebook, name: 'Facebook', url: 'https://www.facebook.com/digitalparthpatel19/' },
-                                { icon: Instagram, name: 'Instagram', url: 'https://www.instagram.com/digitalparthpatel/' },
-                                { icon: Linkedin, name: 'Linkedin', url: 'https://www.linkedin.com/company/digital-parth-patel/' },
+                                { icon: Facebook, name: 'Facebook', url: 'https://www.facebook.com/digitalparth/' },
+                                { icon: Instagram, name: 'Instagram', url: 'https://www.instagram.com/digitalparth/' },
+                                { icon: Linkedin, name: 'Linkedin', url: 'https://www.linkedin.com/company/digital-parth/' },
                             ].map((social) => (
                                 <a
                                     key={social.name}

@@ -50,13 +50,11 @@ const Navbar = () => {
         >
             <div className="container mx-auto px-4 md:px-6 flex justify-between items-center">
                 <Link to="/" className="flex items-center">
-                    <div className="bg-white/5 backdrop-blur-sm p-1.5 rounded-xl border border-white/10 hover:bg-white/10 transition-colors">
                         <img 
-                            src="/images/logo.png" 
+                            src="/images/logo-new.png" 
                             alt="Digital Parth Patel" 
-                            className="h-10 md:h-14 w-auto object-contain brightness-125 contrast-125"
+                            className="h-10 md:h-14 w-auto object-contain brightness-125 contrast-125 transition-transform hover:scale-110"
                         />
-                    </div>
                 </Link>
 
                 {/* Desktop Links */}

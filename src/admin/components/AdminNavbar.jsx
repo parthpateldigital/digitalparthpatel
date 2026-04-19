@@ -68,7 +68,7 @@ export default function AdminNavbar() {
                     <div className="relative group-hover:scale-105 transition-transform duration-500">
                         <div className="w-11 h-11 rounded-[22px] overflow-hidden border-2 border-white/10 group-hover:border-blue-500/50 transition-all shadow-2xl">
                             <div className="w-full h-full bg-gradient-to-br from-blue-600 to-indigo-800 flex items-center justify-center font-black text-white text-xs italic">
-                                PP
+                                PB
                             </div>
                         </div>
                         <div className="absolute -bottom-0.5 -right-0.5 w-3.5 h-3.5 bg-emerald-500 rounded-full border-[3px] border-[#020617] shadow-lg shadow-emerald-500/20" />

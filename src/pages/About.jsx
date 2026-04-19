@@ -43,13 +43,13 @@ const About = () => {
                             className="relative p-2 glass-card rounded-2xl border-white/10"
                         >
                             <img
-                                src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&q=80&w=1200"
-                                alt="Our Agency Workspace"
-                                className="rounded-xl w-full"
+                                src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=100&w=2400"
+                                alt="Parth Patel Marketing Team"
+                                className="rounded-xl w-full shadow-2xl border border-white/5"
                                 loading="lazy"
                             />
                             <div className="absolute -bottom-8 -right-8 glass-card p-8 rounded-2xl border-white/20 hidden md:block">
-                                <p className="text-primary font-bold text-4xl mb-1">3+</p>
+                                <p className="text-primary font-bold text-4xl mb-1">2.5+</p>
                                 <p className="text-white text-sm uppercase tracking-widest">Years Experience</p>
                             </div>
                         </motion.div>

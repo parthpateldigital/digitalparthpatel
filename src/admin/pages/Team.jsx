@@ -26,7 +26,7 @@ import GlassCard from '../components/GlassCard';
 import { useToast } from '../context/ToastContext';
 
 const initialTeam = [
-    { id: 1, name: 'Parth Bhensadadiya', role: 'Founder & CEO', bio: 'Digital marketing expert with 8+ years of experience helping brands scale globally through data-driven SEO and Ads.', image: '#', social: ['Linkedin', 'Twitter'] },
+    { id: 1, name: 'Parth Patel', role: 'Founder & CEO', bio: 'Digital marketing expert with 8+ years of experience helping brands scale globally through data-driven SEO and Ads.', image: '#', social: ['Linkedin', 'Twitter'] },
     { id: 2, name: 'Megha Sharma', role: 'Head of SEO', bio: 'Expert in technical SEO and content strategy with a proven track record of ranking complex websites in competitive niches.', image: '#', social: ['Linkedin', 'Instagram'] },
     { id: 3, name: 'Rahul Varma', role: 'Ads Manager', bio: 'Certified Google Ads specialist focused on maximizing ROI and scaling PPC campaigns for high-growth startups.', image: '#', social: ['Linkedin', 'Facebook'] },
 ];

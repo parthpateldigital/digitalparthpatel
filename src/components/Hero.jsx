@@ -8,7 +8,7 @@ const Hero = () => {
         <section
             className="relative pt-24 pb-8 md:pt-36 md:pb-12 overflow-hidden bg-slate-950"
             style={{
-                backgroundImage: "linear-gradient(to right, rgba(2, 6, 23, 0.95) 0%, rgba(2, 6, 23, 0.6) 40%, rgba(2, 6, 23, 0.1) 100%), url('/images/hero-digital-marketing.jpg')",
+                backgroundImage: "linear-gradient(to right, rgba(2, 6, 23, 0.95) 0%, rgba(2, 6, 23, 0.8) 40%, rgba(2, 6, 23, 0.3) 100%), url('/images/hero-marketing-new.png')",
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
                 backgroundAttachment: 'fixed'
@@ -137,9 +137,9 @@ const Hero = () => {
                         >
                             <div className="relative p-2 rounded-3xl border border-white/10 bg-white/5 shadow-2xl overflow-hidden">
                                 <img
-                                    src="/images/hero-digital-marketing.jpg"
+                                    src="/images/hero-marketing-new.png"
                                     alt="Digital Marketing Expertise"
-                                    className="rounded-3xl w-full aspect-[4/5] object-cover shadow-2xl opacity-80 group-hover:opacity-100 transition-opacity"
+                                    className="rounded-3xl w-full aspect-[4/5] object-cover shadow-2xl opacity-90 group-hover:opacity-100 transition-opacity"
                                 />
 
 

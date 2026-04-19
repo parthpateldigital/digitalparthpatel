@@ -70,7 +70,7 @@ export default function ContactSettings() {
                                     <label className="text-[10px] font-black text-slate-500 uppercase tracking-widest pl-2 italic italic-none flex items-center gap-2"><Mail size={12} className="text-blue-500" /> Primary Email Node</label>
                                     <div className="relative group">
                                         <Mail size={18} className="absolute left-6 top-1/2 -translate-y-1/2 text-slate-600 group-focus-within:text-blue-500 transition-colors pointer-events-none" />
-                                        <input type="email" className="w-full bg-white/5 border border-white/10 rounded-2xl py-4.5 pl-16 pr-6 text-white font-bold focus:outline-none focus:border-blue-500 transition-all focus:bg-white/10 placeholder:text-slate-800" defaultValue="hello@digitalparthpatel.com" />
+                                        <input type="email" className="w-full bg-white/5 border border-white/10 rounded-2xl py-4.5 pl-16 pr-6 text-white font-bold focus:outline-none focus:border-blue-500 transition-all focus:bg-white/10 placeholder:text-slate-800" defaultValue="hello@digitalparth.com" />
                                     </div>
                                 </div>
                             </div>

@@ -155,7 +155,7 @@ export default function AdminSidebar({ isOpen, toggleSidebar }) {
                         className={`flex items-center gap-4 p-2.5 rounded-[24px] hover:bg-white/5 border border-transparent hover:border-white/10 cursor-pointer transition-all group ${isOpen ? '' : 'justify-center'}`}
                     >
                         <div className="w-10 h-10 rounded-full bg-gradient-to-tr from-blue-600/20 to-indigo-600/20 flex items-center justify-center text-blue-400 font-black border border-blue-500/20 shadow-xl shadow-blue-600/10 group-hover:scale-105 transition-all">
-                            P
+                            PB
                         </div>
                         {isOpen && (
                             <div className="overflow-hidden flex-1">

@@ -87,7 +87,7 @@ export default function Login() {
                                         type="email"
                                         required
                                         className="w-full bg-white/5 border border-white/10 rounded-2xl py-5 pl-16 pr-6 text-white font-bold focus:outline-none focus:border-blue-500 transition-all focus:bg-white/10 placeholder:text-slate-700 placeholder:font-medium"
-                                        placeholder="admin@digitalparthpatel.com"
+                                        placeholder="admin@digitalparth.com"
                                         value={email}
                                         onChange={(e) => setEmail(e.target.value)}
                                     />

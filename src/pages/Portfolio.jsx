@@ -359,7 +359,7 @@ const Portfolio = () => {
                                     <div className="w-12 h-12 bg-slate-900 rounded-xl flex items-center justify-center text-primary"><MapPin size={20} /></div>
                                     <div>
                                         <p className="text-[10px] font-bold text-slate-500 uppercase">Location</p>
-                                        <p className="text-xs font-bold text-white">Bopal, Ahmedabad</p>
+                                        <p className="text-xs font-bold text-white">4 Baleshwar Vihar, Bopal, Ahmedabad, Gujarat, India</p>
                                     </div>
                                 </div>
                                 <a href="/docs/Parth-Patel-Resume.pdf" download className="p-6 bg-primary/20 border border-primary/30 rounded-3xl flex items-center gap-4 hover:bg-primary/30 transition-all group">

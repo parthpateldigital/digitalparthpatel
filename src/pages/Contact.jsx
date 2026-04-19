@@ -96,7 +96,7 @@ const Contact = () => {
                                     </div>
                                     <div>
                                         <h4 className="text-white font-bold text-sm uppercase tracking-wider mb-1">Our Office</h4>
-                                        <p className="text-slate-400">Bopal, Ahmedabad, Gujarat, India</p>
+                                        <p className="text-white font-medium">4 Baleshwar Vihar, Bopal, Ahmedabad, Gujarat, India</p>
                                     </div>
                                 </div>
 

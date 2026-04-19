@@ -110,10 +110,10 @@ const Portfolio = () => {
                             className="space-y-8"
                         >
                             <div className="space-y-4">
-                                <h1 className="text-5xl md:text-7xl lg:text-8xl font-black text-white leading-none">
+                                <h1 className="text-4xl md:text-6xl lg:text-7xl font-black text-white leading-tight">
                                     I'm <br />
                                     <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-purple-500 to-emerald-500">
-                                        Parth Patel
+                                        Parth Bhensadadiya
                                     </span>
                                 </h1>
                                 <p className="text-xl md:text-2xl text-slate-400 font-light tracking-tight italic italic-none">

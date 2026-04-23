@@ -169,7 +169,7 @@ const Portfolio = () => {
 
                                 <div className="absolute inset-2 rounded-full overflow-hidden border-2 border-slate-800 z-10">
                                     <img 
-                                        src="/images/parth-profile.jpg" 
+                                        src="/images/parth-profile-main.png" 
                                         alt="Parth Patel Profile" 
                                         className="w-full h-full object-cover"
                                     />

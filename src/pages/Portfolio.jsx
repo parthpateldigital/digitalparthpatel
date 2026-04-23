@@ -57,20 +57,34 @@ const Portfolio = () => {
             title: 'Search Engine Optimization',
             icon: <Search className="text-blue-400" size={20} />,
             borderColor: 'group-hover:border-blue-500/50',
-            tags: ['On-Page SEO', 'Technical SEO', 'XML Sitemaps', 'Keyword Research', 'Off-Page (Backlinking)', 'Content Optimization']
+            desc: 'On-page & Off-page SEO expert. Skilled in Meta tag creation, content optimization, XML sitemaps, and link building (Directory, Article, Social Bookmark). proficient in keyword research using Keyword Planner.',
+            tags: ['On-Page SEO', 'Off-Page SEO', 'Keyword Research', 'XML Sitemaps', 'Content Strategy']
         },
         {
-            title: 'Performance Marketing',
-            icon: <BarChart3 className="text-purple-400" size={20} />,
+            title: 'WordPress & Paid Ads',
+            icon: <Zap className="text-purple-400" size={20} />,
             borderColor: 'group-hover:border-purple-500/50',
-            tags: ['Google Ads (Search/Display)', 'Meta Ads Manager', 'Lead Generation', 'App Promotion', 'Analytics Tracking']
+            desc: 'End-to-end WordPress development including speed optimization and plagiarism checks. Expert in Google and Meta Ads (Facebook/Instagram), campaign tracking, and traffic analysis.',
+            tags: ['WordPress Dev', 'Google Ads', 'Meta Ads', 'Speed Optimization', 'Conversion Tracking']
         },
         {
-            title: 'Social Media & Content',
+            title: 'Social Media Marketing',
             icon: <Share2 className="text-emerald-400" size={20} />,
             borderColor: 'group-hover:border-emerald-500/50',
-            tags: ['SMM Strategy', 'Calendar Creation', 'HootSuite', 'Engagement Analysis', 'Facebook & Instagram Ads']
+            desc: 'Strategic social media management including account handling, calendar creation, and advanced strategy planning. Skilled in running high-ROI campaigns across Facebook and Instagram.',
+            tags: ['Social Media Calendar', 'Account Management', 'Ad Campaigns', 'Strategy Planning']
         }
+    ]
+
+    const certifications = [
+        { title: 'Advance Digital Marketing Program', platform: 'ASDM' },
+        { title: 'SEO, HubSpot SEO & Semrush', platform: 'HubSpot / Semrush' },
+        { title: 'Social Media Marketing', platform: 'Professional' },
+        { title: 'Facebook Ads', platform: 'Meta' },
+        { title: 'Google ADS Search', platform: 'Google' },
+        { title: 'Google Analytics', platform: 'Google' },
+        { title: 'WordPress Website', platform: 'Web Development' },
+        { title: 'Google ADS Display, Video', platform: 'Google' }
     ]
 
     const achievements = [
@@ -117,16 +131,13 @@ const Portfolio = () => {
                                     </span>
                                 </h1>
                                 <p className="text-xl md:text-2xl text-slate-400 font-light tracking-tight italic italic-none">
-                                    Ambitious & Results-driven <span className="text-white font-medium">Digital Marketer</span>. Utilizing specialized skills in SEO, PPC, and SMM to drive organizational growth.
+                                    I am very ambitious about my work and company. To secure a challenging and rewarding position where I can utilize my skills and knowledge to contribute effectively to the success of the organization. I aim to continuously learn and grow while positively impacting the team and the company's goals.
                                 </p>
                             </div>
 
                             <div className="flex flex-wrap gap-4 pt-4">
                                 <Link to="/contact" className="px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl text-white font-bold flex items-center gap-2 hover:scale-105 transition-all shadow-xl shadow-blue-500/20">
                                     Get In Touch <ArrowRight size={18} />
-                                </Link>
-                                <Link to="/#services" className="px-8 py-4 bg-slate-800/50 border border-slate-700/50 rounded-2xl text-white font-bold flex items-center gap-2 hover:bg-slate-700/50 transition-all">
-                                    View Services
                                 </Link>
                             </div>
                         </motion.div>
@@ -163,38 +174,29 @@ const Portfolio = () => {
                                         className="w-full h-full object-cover"
                                     />
                                 </div>
+
+                                {/* Experience Badge */}
+                                <motion.div
+                                    initial={{ opacity: 0, x: -20 }}
+                                    animate={{ opacity: 1, x: 0 }}
+                                    transition={{ delay: 1.2 }}
+                                    className="absolute -bottom-4 left-0 z-30 flex items-center gap-3 px-6 py-3 bg-slate-900/90 backdrop-blur-xl border border-slate-700/50 rounded-2xl shadow-2xl hover:scale-105 transition-all"
+                                >
+                                    <div className="w-10 h-10 bg-blue-600/20 rounded-xl flex items-center justify-center text-blue-500">
+                                        <Briefcase size={20} />
+                                    </div>
+                                    <div className="flex flex-col leading-none">
+                                        <span className="text-lg font-black text-white">2.5+</span>
+                                        <span className="text-[8px] text-slate-500 uppercase font-bold tracking-widest leading-tight">Years <br /> Experience</span>
+                                    </div>
+                                </motion.div>
                             </div>
                         </motion.div>
                     </div>
                 </div>
             </section>
 
-            {/* QUICK STATS */}
-            <section className="py-20 bg-slate-900/30">
-                <div className="container mx-auto px-4 lg:max-w-6xl">
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                        {[
-                            { value: 'WordPress', label: 'Development & Plagiarism Checks', icon: <Target className="text-blue-500" /> },
-                            { value: '2.5+', label: 'Years Experience', icon: <Briefcase className="text-purple-500" /> },
-                            { value: '3+', label: 'Languages Spoken', icon: <Globe className="text-emerald-500" /> },
-                        ].map((stat, i) => (
-                            <motion.div 
-                                key={i}
-                                whileHover={{ y: -5 }}
-                                className="p-8 bg-slate-800/40 border border-slate-700/50 rounded-3xl flex items-center gap-6"
-                            >
-                                <div className="w-16 h-16 bg-slate-900 rounded-2xl flex items-center justify-center border border-slate-700/50">
-                                    {stat.icon}
-                                </div>
-                                <div>
-                                    <h4 className="text-2xl font-black text-white">{stat.value}</h4>
-                                    <p className="text-slate-500 text-[10px] uppercase tracking-widest font-bold">{stat.label}</p>
-                                </div>
-                            </motion.div>
-                        ))}
-                    </div>
-                </div>
-            </section>
+
 
             {/* SKILLS SECTION */}
             <section className="py-24">
@@ -211,6 +213,9 @@ const Portfolio = () => {
                                     {skill.icon}
                                 </div>
                                 <h4 className="text-2xl font-black text-white mb-6 uppercase tracking-tight">{skill.title}</h4>
+                                <p className="text-slate-400 text-sm mb-8 leading-relaxed font-light italic italic-none border-l-2 border-primary/20 pl-4">
+                                    {skill.desc}
+                                </p>
                                 <div className="flex flex-wrap gap-2">
                                     {skill.tags.map((tag, idx) => (
                                         <span key={idx} className="px-3 py-1.5 bg-slate-950/50 text-slate-400 text-[10px] font-bold rounded-lg border border-slate-800 border-white/5 uppercase tracking-wider group-hover:text-white transition-colors">
@@ -219,6 +224,32 @@ const Portfolio = () => {
                                     ))}
                                 </div>
                             </div>
+                        ))}
+                    </div>
+                </div>
+            </section>
+
+            {/* CERTIFICATIONS SECTION */}
+            <section className="py-24 bg-slate-900/10">
+                <div className="container mx-auto px-4 max-w-6xl">
+                    <div className="text-center mb-16 space-y-4">
+                        <h2 className="text-sm font-black text-primary uppercase tracking-[0.4em]">Credentials</h2>
+                        <h3 className="text-4xl md:text-5xl font-black text-white italic italic-none uppercase tracking-tighter">Professional <span className="text-gradient">Certifications</span></h3>
+                    </div>
+
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                        {certifications.map((cert, i) => (
+                            <motion.div 
+                                key={i}
+                                whileHover={{ y: -5 }}
+                                className="p-6 bg-slate-800/20 border border-slate-700/30 rounded-3xl hover:border-primary/50 transition-all group"
+                            >
+                                <div className="w-10 h-10 bg-slate-900 rounded-xl flex items-center justify-center text-primary mb-4 group-hover:scale-110 transition-transform">
+                                    <CheckCircle2 size={20} />
+                                </div>
+                                <h4 className="text-white font-bold text-sm leading-tight mb-2 uppercase tracking-tight">{cert.title}</h4>
+                                <p className="text-slate-500 text-[10px] uppercase font-black tracking-widest">{cert.platform}</p>
+                            </motion.div>
                         ))}
                     </div>
                 </div>
@@ -355,20 +386,13 @@ const Portfolio = () => {
                                         <p className="text-xs font-bold text-white">+91 7600907141</p>
                                     </div>
                                 </a>
-                                <div className="p-6 bg-slate-800/40 border border-slate-700/50 rounded-3xl flex items-center gap-4">
+                                <div className="p-6 bg-slate-800/40 border border-slate-700/50 rounded-3xl flex items-center gap-4 sm:col-span-2">
                                     <div className="w-12 h-12 bg-slate-900 rounded-xl flex items-center justify-center text-primary"><MapPin size={20} /></div>
                                     <div>
                                         <p className="text-[10px] font-bold text-slate-500 uppercase">Location</p>
                                         <p className="text-xs font-bold text-white">4 Baleshwar Vihar, Bopal, Ahmedabad, Gujarat, India</p>
                                     </div>
                                 </div>
-                                <a href="/docs/Parth-Patel-Resume.pdf" download className="p-6 bg-primary/20 border border-primary/30 rounded-3xl flex items-center gap-4 hover:bg-primary/30 transition-all group">
-                                    <div className="w-12 h-12 bg-primary rounded-xl flex items-center justify-center text-white shadow-lg shadow-primary/40 group-hover:scale-110 transition-transform"><Download size={20} /></div>
-                                    <div>
-                                        <p className="text-[10px] font-bold text-primary uppercase">Download</p>
-                                        <p className="text-xs font-black text-white">Official Resume</p>
-                                    </div>
-                                </a>
                             </div>
                         </div>
 

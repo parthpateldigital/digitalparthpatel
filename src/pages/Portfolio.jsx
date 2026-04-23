@@ -139,6 +139,9 @@ const Portfolio = () => {
                                 <Link to="/contact" className="px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl text-white font-bold flex items-center gap-2 hover:scale-105 transition-all shadow-xl shadow-blue-500/20">
                                     Get In Touch <ArrowRight size={18} />
                                 </Link>
+                                <a href="/docs/Parth-Patel-Resume.pdf" download className="px-8 py-4 bg-slate-800/50 border border-slate-700/50 rounded-2xl text-white font-bold flex items-center gap-2 hover:bg-slate-700/50 transition-all shadow-xl">
+                                    Download Resume <Download size={18} />
+                                </a>
                             </div>
                         </motion.div>
 

@@ -34,7 +34,7 @@ const Portfolio = () => {
             company: 'SIGZEN TECHNOLOGIES PVT. LTD',
             role: 'DIGITAL MARKETER (PPC, SEO, SMM)',
             period: 'AUG 2023 - PRESENT',
-            desc: 'Executing comprehensive search engine optimization strategies, managing high-performance Pay-Per-Click campaigns, and handling social media marketing across all major platforms to drive organizational growth.'
+            desc: 'WordPress Website & SEO: Specialized in building WordPress sites with advanced On-page and Off-page SEO. Digital Advertising: Practical expertise in Google & Meta Ads, focusing on Lead Generation, Display, and App Promotion. Social Media Marketing: Proficient in creating Social Media Calendars, Strategic Planning, and managing campaigns across Facebook, Instagram, LinkedIn, and Twitter.'
         },
         {
             company: 'SIGZEN TECHNOLOGIES PVT. LTD',

@@ -7,7 +7,7 @@ const FinalCTA = () => {
     return (
         <section className="py-12 bg-slate-950 relative overflow-hidden">
             {/* Background Accent */}
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-primary/10 rounded-full blur-[140px] pointer-events-none" />
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-blue-600/10 rounded-full blur-[140px] pointer-events-none" />
 
             <div className="container mx-auto px-4 md:px-6 relative z-10">
                 <motion.div

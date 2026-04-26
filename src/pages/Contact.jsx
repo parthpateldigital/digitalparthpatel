@@ -39,9 +39,14 @@ const Contact = () => {
     }
 
     return (
-        <div className="pt-24 min-h-screen bg-dark">
-            <section className="py-20">
-                <div className="container mx-auto px-4 md:px-6">
+        <div className="pt-24 min-h-screen bg-slate-950">
+            <section className="py-20 relative overflow-hidden">
+                <div className="absolute top-0 left-0 w-full h-full pointer-events-none">
+                    <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-blue-600/10 via-transparent to-transparent" />
+                    <div className="absolute top-[-20%] right-[-10%] w-[70%] h-[70%] bg-primary/10 rounded-full blur-[140px]" />
+                    <div className="absolute bottom-[0%] left-[-10%] w-[50%] h-[50%] bg-blue-600/5 rounded-full blur-[100px]" />
+                </div>
+                <div className="container mx-auto px-4 md:px-6 relative z-10">
                     <div className="text-center max-w-3xl mx-auto mb-16">
                         <motion.h1
                             initial={{ opacity: 0, y: 20 }}
@@ -96,7 +101,7 @@ const Contact = () => {
                                     </div>
                                     <div>
                                         <h4 className="text-white font-bold text-sm uppercase tracking-wider mb-1">Our Office</h4>
-                                        <p className="text-white font-medium">4 Baleshwar Vihar, Bopal, Ahmedabad, Gujarat, India</p>
+                                        <p className="text-white font-medium">Sukirti 54, B/H, CLUB O7, Shanti Asiatic School Rd, opp. MONARCH CITY 2, Shela, Ahmedabad, Gujarat 380057</p>
                                     </div>
                                 </div>
 

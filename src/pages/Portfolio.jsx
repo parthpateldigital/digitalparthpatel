@@ -108,11 +108,14 @@ const Portfolio = () => {
     ]
 
     return (
-        <div className="pt-24 bg-[#020617] min-h-screen text-slate-300">
+        <div className="pt-24 bg-slate-950 min-h-screen text-slate-300">
             {/* HERO SECTION */}
             <section className="relative py-20 lg:py-32 overflow-hidden">
-                <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-primary/20 rounded-full blur-[120px] -z-10 pointer-events-none" />
-                <div className="absolute bottom-0 left-0 w-[300px] h-[300px] bg-blue-600/10 rounded-full blur-[100px] -z-10 pointer-events-none" />
+                <div className="absolute top-0 left-0 w-full h-full pointer-events-none">
+                    <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-blue-600/20 via-transparent to-transparent" />
+                    <div className="absolute top-[-20%] right-[-10%] w-[70%] h-[70%] bg-primary/10 rounded-full blur-[140px]" />
+                    <div className="absolute bottom-[0%] left-[-10%] w-[50%] h-[50%] bg-blue-600/5 rounded-full blur-[100px]" />
+                </div>
                 
                 <div className="container mx-auto px-4 md:px-6">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
@@ -130,6 +133,11 @@ const Portfolio = () => {
                                         Parth Bhensadadiya
                                     </span>
                                 </h1>
+                                <div className="inline-block px-3 py-1 mb-2 bg-blue-500/10 border border-blue-500/20 rounded-full">
+                                    <span className="text-[10px] md:text-xs font-black text-blue-400 uppercase tracking-[0.3em]">
+                                        Digital Marketer
+                                    </span>
+                                </div>
                                 <p className="text-xl md:text-2xl text-slate-400 font-light tracking-tight italic italic-none">
                                     I am very ambitious about my work and company. To secure a challenging and rewarding position where I can utilize my skills and knowledge to contribute effectively to the success of the organization. I aim to continuously learn and grow while positively impacting the team and the company's goals.
                                 </p>
@@ -139,7 +147,7 @@ const Portfolio = () => {
                                 <Link to="/contact" className="px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl text-white font-bold flex items-center gap-2 hover:scale-105 transition-all shadow-xl shadow-blue-500/20">
                                     Get In Touch <ArrowRight size={18} />
                                 </Link>
-                                <a href="/docs/Parth-Patel-Resume.pdf" download className="px-8 py-4 bg-slate-800/50 border border-slate-700/50 rounded-2xl text-white font-bold flex items-center gap-2 hover:bg-slate-700/50 transition-all shadow-xl">
+                                <a href="/docs/Parth_Patel_Resume.pdf" download className="px-8 py-4 bg-slate-800/50 border border-slate-700/50 rounded-2xl text-white font-bold flex items-center gap-2 hover:bg-slate-700/50 transition-all shadow-xl">
                                     Download Resume <Download size={18} />
                                 </a>
                             </div>
@@ -174,7 +182,7 @@ const Portfolio = () => {
                                     <img 
                                         src="/images/parth-profile-main.png" 
                                         alt="Parth Patel Profile" 
-                                        className="w-full h-full object-cover"
+                                        className="w-full h-full object-cover scale-[1.4] object-top transition-transform duration-500 hover:scale-[1.5]"
                                     />
                                 </div>
 
@@ -393,7 +401,7 @@ const Portfolio = () => {
                                     <div className="w-12 h-12 bg-slate-900 rounded-xl flex items-center justify-center text-primary"><MapPin size={20} /></div>
                                     <div>
                                         <p className="text-[10px] font-bold text-slate-500 uppercase">Location</p>
-                                        <p className="text-xs font-bold text-white">4 Baleshwar Vihar, Bopal, Ahmedabad, Gujarat, India</p>
+                                        <p className="text-xs font-bold text-white">Sukirti 54, B/H, CLUB O7, Shanti Asiatic School Rd, opp. MONARCH CITY 2, Shela, Ahmedabad, Gujarat 380057</p>
                                     </div>
                                 </div>
                             </div>
@@ -427,7 +435,6 @@ const Portfolio = () => {
             </section>
 
             <FAQ />
-            <FinalCTA />
         </div>
     )
 }

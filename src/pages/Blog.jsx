@@ -12,9 +12,13 @@ const Blog = () => {
     const publishedPosts = posts.filter(post => post.status === 'Published');
 
     return (
-        <div className="pt-24 min-h-screen bg-slate-950">
-            {/* Header */}
-            <section className="py-20 border-b border-white/5 bg-slate-900/50">
+        <div className="pt-24 min-h-screen bg-slate-950 text-slate-300">
+            {/* Header with Blue Accents */}
+            <section className="py-20 border-b border-white/5 bg-slate-900/50 relative overflow-hidden">
+                <div className="absolute top-0 left-0 w-full h-full pointer-events-none">
+                    <div className="absolute top-[-10%] left-[-10%] w-[50%] h-[50%] bg-blue-600/30 rounded-full blur-[120px]" />
+                    <div className="absolute bottom-0 right-[-5%] w-[40%] h-[60%] bg-primary/10 rounded-full blur-[100px]" />
+                </div>
                 <div className="container mx-auto px-4 md:px-6">
                     <div className="flex flex-col md:flex-row justify-between items-end gap-12">
                         <div className="md:w-2/3">
@@ -50,8 +54,9 @@ const Blog = () => {
             </section>
 
             {/* Blog Posts Grid */}
-            <section className="py-24">
-                <div className="container mx-auto px-4 md:px-6">
+            <section className="py-24 relative overflow-hidden">
+                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-blue-600/5 rounded-full blur-[120px] pointer-events-none" />
+                <div className="container mx-auto px-4 md:px-6 relative z-10">
                     {publishedPosts.length > 0 ? (
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
                             {publishedPosts.map((post, i) => (

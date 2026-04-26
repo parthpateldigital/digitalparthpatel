@@ -103,7 +103,7 @@ const Footer = () => {
                             </li>
                             <li className="flex items-start gap-3 text-slate-400 text-sm">
                                 <MapPin size={16} className="text-primary mt-1 flex-shrink-0" />
-                                <span>4 Baleshwar Vihar, Bopal, Ahmedabad, Gujarat, India</span>
+                                <span>Sukirti 54, B/H, CLUB O7, Shanti Asiatic School Rd, opp. MONARCH CITY 2, Shela, Ahmedabad, Gujarat 380057</span>
                             </li>
                         </ul>
                     </div>

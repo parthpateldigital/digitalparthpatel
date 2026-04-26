@@ -9,9 +9,9 @@ const BlogPreview = () => {
     const latestPosts = posts.filter(post => post.status === 'Published').slice(0, 3);
 
     return (
-        <section className="py-24 bg-dark relative overflow-hidden">
+        <section className="py-24 bg-slate-950 relative overflow-hidden">
             {/* Background Glow */}
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-primary/5 blur-[120px] rounded-full pointer-events-none" />
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-blue-600/10 blur-[120px] rounded-full pointer-events-none" />
 
             <div className="container mx-auto px-4 md:px-6 relative z-10">
                 <div className="flex flex-col md:flex-row md:items-end justify-between gap-8 mb-16">

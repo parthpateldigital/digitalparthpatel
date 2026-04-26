@@ -25,7 +25,9 @@ const testimonials = [
 
 const Testimonials = () => {
     return (
-        <section className="py-10 bg-dark">
+        <section className="py-10 bg-slate-950 relative overflow-hidden">
+            {/* Background Decor */}
+            <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-blue-600/5 to-transparent pointer-events-none" />
             <div className="container mx-auto px-4 md:px-6">
                 <div className="text-center max-w-3xl mx-auto mb-12">
                     <h2 className="text-3xl md:text-5xl font-bold text-white mb-4 uppercase tracking-tight">

@@ -34,10 +34,14 @@ const smoFeatures = [
 
 const SmoServices = () => {
     return (
-        <div className="pt-24">
+        <div className="pt-24 min-h-screen bg-slate-950">
             {/* Header Section */}
-            <section className="py-20 bg-gradient-to-b from-dark to-slate-900 border-b border-white/5">
-                <div className="container mx-auto px-4 md:px-6 text-center">
+            <section className="py-24 relative overflow-hidden bg-slate-950 border-b border-white/5">
+                <div className="absolute top-0 left-0 w-full h-full pointer-events-none">
+                    <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-blue-600/20 via-transparent to-transparent" />
+                    <div className="absolute top-[-20%] right-[-10%] w-[70%] h-[70%] bg-primary/10 rounded-full blur-[140px]" />
+                </div>
+                <div className="container mx-auto px-4 md:px-6 text-center relative z-10">
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}

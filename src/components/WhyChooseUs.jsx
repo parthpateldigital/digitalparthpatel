@@ -27,7 +27,8 @@ const features = [
 
 const WhyChooseUs = () => {
     return (
-        <section className="py-12 bg-slate-950 border-y border-white/5">
+        <section className="py-12 bg-slate-950 border-y border-white/5 relative overflow-hidden">
+            <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-blue-600/5 rounded-full blur-[100px] pointer-events-none" />
             <div className="container mx-auto px-4 md:px-6">
                 <div className="flex flex-col lg:flex-row gap-16 items-center">
                     <motion.div

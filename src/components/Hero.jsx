@@ -14,10 +14,11 @@ const Hero = () => {
                 backgroundAttachment: 'fixed'
             }}
         >
-            {/* Cleaner Background */}
-            <div className="absolute top-0 left-0 w-full h-full pointer-events-none select-none">
-                <div className="absolute top-[-10%] left-[-10%] w-[50%] h-[50%] bg-primary/10 rounded-full blur-[120px]" />
-                <div className="absolute bottom-[10%] right-[-5%] w-[40%] h-[60%] bg-blue-600/5 rounded-full blur-[100px]" />
+            {/* Premium Background Atmosphere */}
+            <div className="absolute top-0 left-0 w-full h-full pointer-events-none overflow-hidden">
+                <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-blue-600/20 via-transparent to-transparent" />
+                <div className="absolute top-[-10%] right-[-5%] w-[60%] h-[60%] bg-primary/15 rounded-full blur-[120px]" />
+                <div className="absolute bottom-[10%] left-[-10%] w-[50%] h-[50%] bg-blue-600/10 rounded-full blur-[100px]" />
             </div>
 
             <div className="container mx-auto px-4 md:px-6 relative z-10">

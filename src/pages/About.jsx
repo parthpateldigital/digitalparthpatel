@@ -6,9 +6,14 @@ import FinalCTA from '../components/FinalCTA'
 
 const About = () => {
     return (
-        <div className="pt-24">
+        <div className="pt-24 min-h-screen">
             {/* Hero Section */}
-            <section className="py-24 relative overflow-hidden bg-dark">
+            <section className="py-24 relative overflow-hidden bg-slate-950/50">
+                <div className="absolute top-0 left-0 w-full h-full pointer-events-none">
+                    <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-blue-600/10 via-transparent to-transparent" />
+                    <div className="absolute top-[-20%] right-[-10%] w-[70%] h-[70%] bg-primary/10 rounded-full blur-[140px]" />
+                    <div className="absolute bottom-[0%] left-[-10%] w-[50%] h-[50%] bg-blue-600/5 rounded-full blur-[100px]" />
+                </div>
                 <div className="container mx-auto px-4 md:px-6 relative z-10">
                     <div className="max-w-4xl">
                         <motion.h1

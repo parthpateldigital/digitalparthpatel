@@ -11,9 +11,9 @@ const stats = [
 
 const Results = () => {
     return (
-        <section className="py-10 bg-dark relative overflow-hidden">
+        <section className="py-10 bg-slate-950 relative overflow-hidden">
             {/* Ambient Background Glow */}
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[300px] bg-primary/5 blur-[120px] rounded-full pointer-events-none" />
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[300px] bg-blue-600/10 blur-[120px] rounded-full pointer-events-none" />
 
             <div className="container mx-auto px-4 md:px-6 relative z-10">
                 <div className="glass-card py-12 px-8 rounded-[3rem] border border-white/5 bg-gradient-to-br from-white/[0.03] to-white/[0.01]">
